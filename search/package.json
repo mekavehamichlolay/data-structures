@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.ts",
   "type": "module",
+  "private": true,
   "scripts": {
     "start": "ts-node --esm index.ts",
-    "test": "jest"
+    "test": "jest --watch"
   },
   "keywords": [],
   "author": "",
