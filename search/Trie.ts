@@ -46,6 +46,7 @@ export default class Trie {
         .get(val.substring(0, 1))!;
     if (val.length === 1) {
       child.isWordEnd = true;
+      child.score = 0;
     } else {
       this.addChildren(child, val.substring(1));
     }
@@ -83,6 +84,7 @@ export default class Trie {
     if (!child) return false;
     if (val.length === 1) {
       child.isWordEnd = false;
+      child.score = undefined;
       if (!child.children) {
         return father.children.delete(val.substring(0, 1));
       }

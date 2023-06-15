@@ -1,3 +1,4 @@
+// @ts-expect-error An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled
 import Trie from "./Trie.ts";
 
 describe("Trie", () => {
